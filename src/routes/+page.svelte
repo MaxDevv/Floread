@@ -13,6 +13,7 @@
             elementValues.lineShift = false;
         }, animate ? animationDuration : 1);
     }
+    elementValues.lines = []
     
 
     function previousLine(animate = true) {
@@ -23,11 +24,13 @@
         }, animate ? animationDuration : 1);
     }
 
-    function play() {
+    function play(fromClick=false) {
         if (playing) {
-            if (elementValues.currentLine == elementValues.lines.length) {
-                
+            if (elementValues.currentLine >= elementValues.lines.length) {
                 playing = false;
+                if (fromClick) {
+                    elementValues.currentLine = 0;
+                }
                 return;
             }
             let averageWords = 0;
@@ -38,7 +41,7 @@
             let slightAdjustment = 1 + ((averageWords/(elementValues.lines[elementValues.currentLine].split(" ").length) - 1)/3)
             slightAdjustment = Math.min(1.25, Math.max(slightAdjustment, 0.75));
             console.log(slightAdjustment);
-            let duration = 1000 * 60 * averageWords * slightAdjustment / readSpeed;
+            let duration = 1000 * 60 * averageWords * slightAdjustment / Math.pow(readSpeed, 1.005);
             duration = Math.max(duration, animationDuration+20);
             nextLine();
             setTimeout(play, duration);
@@ -91,11 +94,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_circle" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pause_circle" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_arrow" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=forward_circle" />
 <div class="mainContainer">
     <div class="cover">
 
         <div class="slidecontainer subtleGlow">
-            <input type="range" min="50" max="700" bind:value={readSpeed}>
+            <input type="range" min="50" max="1250" step="50" bind:value={readSpeed}>
             <span>&mdash;</span>
             {readSpeed} WPM
         </div>
@@ -107,10 +111,14 @@
             </button>
             <button onclick={() => {
                     playing = !playing;
-                    play();
+                    play(true);
                 }
             }>
-            {#if !playing}
+            {#if elementValues.currentLine >= elementValues.lines.length - 1}
+                <span class="material-symbols-outlined flipped">
+                    &#xf6f5;
+                </span>
+            {:else if !playing}
                 <span class="material-symbols-outlined">
                     &#xE1C4;
                 </span>
@@ -118,7 +126,7 @@
                 <span class="material-symbols-outlined">
                     &#xe1a2;
                 </span>
-                {/if}
+            {/if}
         </button>
             <button onclick={() => {nextLine(false)}}>
                 <span class="material-symbols-outlined">
@@ -235,9 +243,11 @@
     }
 
     .lineShift {
-
         animation: nextLine 80ms ease-in; /*cubic-bezier(0.974, 0.397, 0.989, 1.655);*/
         animation-fill-mode: forwards;  
+    }
+    .flipped {
+        transform: scale(-1, 1);
     }
 
     @keyframes nextLine {
