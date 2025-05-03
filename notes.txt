@@ -1,0 +1,99 @@
+
+3-May-2025:
+    - I think reading at such high speeds consistently is a lil too hard, so I think the system should break reading up into "sessions" oooh and in the seessioons we could add a timer or no even better a line count to show the user how many lines theey have left, and at the end of each session we could force/have the user summarize what they learnt in at least 10 words, and itd be great cuz not only would it help the user reemrmber better, but it'd give them personalized notes they could reefer back to when needed
+
+I just came up with the perfect ad: 2-May-2025
+    “Do you hate reading?
+    I mean, seriously, who enjoys going through those long, wordy books, pdfs, papers, articles? Not me.
+    Yet we have to, cuz we've got tests, projects, studying, and so much more..
+
+    But what if you could make all that go away?
+    What if you could read that chapter in five minutes?
+    Or learn that unit in ten?
+    Or ...blah blah blah
+    What if there was a better way?
+    What if you could read all of those books, articles, essays in minutes
+    And not just that but what if it was fun, engaging, and actually 
+
+    Welcome to FloRead.
+    We make reading quick, easy, and enjoyable.
+    No more jumbled pages, flipping back and forth, or losing focus.
+    FloRead brings you a simple, organized experience designed to work with your brain.
+
+    Did you know the human brain is capable of reading at insane speeds?
+    The average person reads 200–300 words per minute, but the fastest readers in the world hit 25,000 words per minute, and most speed readers comfortably reach up to 700 wpm
+    That's an entire novel in just over an hour.
+
+    So, why can’t you?
+    It’s simple: Reading isn’t fun enough, engaging enough, or challenging enough.
+
+    That’s where FloRead comes in.
+    With FloRead, we take away the distractions of traditional reading.
+    Our smooth, animated display shows you one sentence at a time, keeping you focused and engaged.
+    Timers add just the right amount of pressure, turning reading into a game.
+
+    Now, you can tackle long documents, books, and papers in minutes while actually enjoying it.
+    Don’t settle for boring audiobooks or the monotony of printed words. Try FloRead today and make reading fun again—for free.”
+
+
+
+
+
+
+
+
+2-May-2025
+    The primary purpose of the website is to help users we text at high speeds and enjoy doing so
+    The target audience should be students who might need to read and studying large amount of text
+    On most readers on the market are very low quality i'm going to call for sentence base reading like the only offer word by word popup reading which is very flickery and thier UI is pretty bad, And none of them gamify the reading  process, my program on the other hand will be animated it will use sentences will be smooth and much more enjoyable to use it's for allow users to see previous and future sentences
+    This will be focused on reading speed and enjoyability
+    The reading material will be entirely up to the user
+    And gingers will be able to track the amount of time reading and words read
+    The time pressure will be implemented the use of animations like the text will be scrolling and this is really good cuz it gives the user or a granular feel of how much time they have per sentence
+    There will not be penalties or adaptations however the sentence speed and duration of showing will slightly adapt depending on the character length of the sentence
+    If will have a dark theme
+    User interface will be very sleek and minimalist however the animations will be smooth and rich
+    It is not really designed for people with the reading imparements but can assist
+    It's not going to need some scalability it's just going to be a piece of software designed once and to be used.
+    The platform success will be measured by the amount of text read by the users.
+    Organized:
+
+        ### **Primary Purpose**
+
+        1. The primary purpose of the website is to help users read text at high speeds and enjoy doing so.
+
+        ### **Target Audience**
+
+        2. The target audience is students or individuals who might need to read and study large amounts of text.
+
+        ### **Unique Selling Points**
+
+        3. Existing readers on the market are low quality, often using flickery word-by-word popup reading with poor UI.
+        4. The program will feature sentence-based reading, offering smooth animations for a better experience.
+        5. It will allow users to see previous and future sentences, providing more context and usability.
+        6. Unlike other platforms, it will gamify the reading process to make it engaging and fun.
+
+        ### **Focus Areas**
+
+        7. The platform is focused on improving reading speed and enjoyability.
+        8. Users will choose their reading material rather than being limited to pre-selected content.
+        9. Users will be able to track their total reading time and the number of words read.
+
+        ### **Time Pressure Implementation**
+
+        10. Time pressure will be introduced through animations like scrolling text, giving users a granular sense of how much time they have per sentence.
+        11. Sentence speed and display duration will adapt slightly based on the character length of each sentence.
+
+        ### **User Experience and Design**
+
+        12. The platform will feature a dark theme.
+        13. The user interface will be sleek and minimalist, with smooth and rich animations to enhance the experience.
+        14. While not specifically designed for people with reading impairments, the platform can still assist them indirectly.
+
+        ### **Scalability and Maintenance**
+
+        15. The platform does not require extensive scalability and is intended as a one-time software build for ongoing use.
+
+        ### **Success Metrics**
+
+        16. The platform's success will be measured by the total amount of text read by users.

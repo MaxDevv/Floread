@@ -1,0 +1,21 @@
+:root {
+    --cosmic-latte: hsla(49, 60%, 93%, 1);
+    --cerise: hsla(345, 76%, 58%, 1);
+    --coral: hsla(14, 100%, 70%, 1);
+    --paynes-gray: hsla(216, 14%, 40%, 1);
+    --raisin-black: hsla(231, 23%, 16%, 1);
+
+}
+
+:global(html, body) {
+    background-color: var(--raisin-black);
+    height: 99%;
+}
+
+div.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
