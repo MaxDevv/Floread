@@ -54,7 +54,7 @@ FloRead is built with Svelte, providing a responsive and smooth user experience 
 
 MIT License
 
-Copyright (c) 2023 FloRead
+Copyright (c) 2025 FloRead
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the \"Software\"), to deal
