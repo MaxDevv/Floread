@@ -1,9 +1,13 @@
 <script>
-import Floread from "./floread.svelte";
-	import Home from "./home.svelte";
+    
 </script>
-<Floread></Floread>
- <!-- <Home></Home> -->
+<div class="mainContainer">
+    <h1 class="title">
+        FloRead
+    </h1>
+    <p>Unlock</p>
+</div>
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 
@@ -21,8 +25,27 @@ import Floread from "./floread.svelte";
         background-color: var(--raisin-black);
         height: 99%;
         font-family: "Cal Sans", sans-serif;
+
     }
     :global(*) {
         color: var(--cosmic-latte);
+    }
+    div.mainContainer {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    .title {
+        font-size: 5rem;
+        font-weight: normal;
+        text-shadow: 0px 0px 0.35em black;
+        letter-spacing: .025em;
+        margin-top: 1.5em;
+        /* color-mix(in srgb, var(--cosmic-latte) 50%, transparent 50%); */
+        
     }
 </style>
